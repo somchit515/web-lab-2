@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mm.css">
+    <script src="js/indek.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow">
+        <img src="img/hh.jpeg" alt="Image 1">
+        <img src="img/xx.jpeg" alt="Image 2">
+        <img src="img/xx.jpeg" alt="Image 2">
+
+    </div>
+    <div class="slideshow-controls">
+        <button onclick="previousSlide()">&#8249;</button>
+        <button onclick="nextSlide()">&#8250;</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Smith</td>
+
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Johnson</td>
+                <td>45</td>
+            </tr>
+
+            <foot>
+                <tr>
+
+                    <td colspan="3">Total:</td>
+                </tr>
+            </foot>
+    </table>
+
+    <div class="container">
+        <button class="button" id="startBtn" disabled>
+          <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <button class="button prevNext" id="prev" disabled>
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="links">
+            <a href="#" class="link active">1</a>
+            <a href="#" class="link">2</a>
+            <a href="#" class="link">3</a>
+            <a href="#" class="link">4</a>
+            <a href="#" class="link">5</a>
+        </div>
+
+        <button class="button prevNext" id="next">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <button class="button" id="endBtn">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

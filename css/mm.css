@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #4070f4;
+}
+
+body,
+.container,
+.button,
+.links,
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #333;
+    height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+.slideshow img:not(:first-child) {
+    opacity: 0;
+}
+
+
+/* เรียกใช้งาน CSS ของปุ่มเปลี่ยนรูปภาพ */
+
+.slideshow-controls {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.slideshow-controls button {
+    background: none;
+    border: none;
+    margin: 0 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    column-gap: 12px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    border: none;
+}
+
+.button i {
+    pointer-events: none;
+}
+
+.button:disabled {
+    color: #b3b3b3;
+    pointer-events: none;
+}
+
+.button,
+.link {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    color: #666666;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.links {
+    column-gap: 12px;
+}
+
+.link {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button:hover,
+.link:hover {
+    color: #fff;
+    background: #4070f4;
+}
+
+.link.active {
+    color: #fff;
+    background: #4070f4;
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
